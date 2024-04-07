@@ -24,7 +24,8 @@ class RequestBody(BaseModel):
 
     text: str
     images: list = []
-    type: str = None
+    type: str = "facebook"
+    link: str
 
 
 class RequestBodyEvent(BaseModel):
@@ -59,8 +60,24 @@ def data(request: RequestBody):
             raise HTTPException(status_code=400, detail="Text field is required")
         if not request.type:
             raise HTTPException(status_code=400, detail="Type field is required")
-        data = detect(request.text)
-        response = DataResponse(code=200, message="SUCCESS", data=json.loads(data))
+        # input = {"text": request.text, "images": request.images}
+        # Assuming detect() returns a JSON string
+        post_json = detect(request.text)
+        post_list = json.loads(post_json)
+
+        # Merge each item in the list separately
+        merged_data = []
+        for post in post_list:
+            data = {
+                **post,
+                "images": request.images,
+                "type": request.type,
+                "link": request.link,
+            }
+            merged_data.append(data)
+
+        # Create response
+        response = DataResponse(code=200, message="SUCCESS", data=merged_data)
         return response
     except Exception as e:
         logger.error(f"Error occurred while handle data: {e}")
