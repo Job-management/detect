@@ -2,13 +2,13 @@ JSON TYPE:
 [
 	{
 		"title": string, (require field)
-		"time": string,
+		"time": number,
 		"city": string, (require field)
 		"level": string, (require field)
-		"work_way": enum['remote', 'hybrid', 'offline'],
+		"workWay": enum['remote', 'hybrid', 'offline'],
 		"company": string, (require field)
-		"job_name": string, (require field)
-		"number_employees": number,
+		"job": string, (require field)
+		"numberEmployees": number,
 		"salary": string,
 		"description": string,
 		"requirements": string,
@@ -44,17 +44,18 @@ Input:
 				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
 			}
 		]
+	time: 1713339960000
 Output:
 [
 	{
 		"title": "[ĐÀ NẴNG/REMOTE] H𝗜𝗙𝗜𝗩𝗘𝗣𝗟𝗨𝗦 𝗧𝗛ÔNG BÁO TUYỂN DỤNG",
-		"time": "",
+		"time": 1713339960000,
 		"city": "Đà nẵng",
 		"level": "",
-		"work_way": ["Online", "Hybrid", "Offline"],
+		"workWay": ["Online", "Hybrid", "Offline"],
 		"company": "H𝗜𝗙𝗜𝗩𝗘𝗣𝗟𝗨𝗦",
-		"job_name": "Game Developer",
-		"number_employees": 1,
+		"job": "Game Developer, Business Analyst, Giáo viên dạy Scratch, Giáo viên dạy Python",
+		"numberEmployees": 1,
 		"salary": "",
 		"description": "",
 		"requirements": "",
@@ -64,84 +65,6 @@ Output:
 			{
 				"description": "",
 				"src": "https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED"
-			}
-		],
-		contact: "Email/Skype: Thuy.dtalent@gmail.com Zalo: 0399449727"
-	},
-	{
-		"title": "[ĐÀ NẴNG/REMOTE] H𝗜𝗙𝗜𝗩𝗘𝗣𝗟𝗨𝗦 𝗧𝗛ÔNG BÁO TUYỂN DỤNG",
-		"time": "",
-		"city": "Đà nẵng",
-		"level": "",
-		"work_way": ["Online", "Hybrid", "Offline"],
-		"company": "H𝗜𝗙𝗜𝗩𝗘𝗣𝗟𝗨𝗦",
-		"job_name": "Business Analyst",
-		"number_employees": 1,
-		"salary": "",
-		"description": "",
-		"requirements": "",
-		"type": "facebook",
-		"link": "",
-		"images": [
-			{
-				description: 'there is an even simpler way',
-				src: 'https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED'
-			},
-			{
-				description: 'Try combining the two code snippets',
-				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
-			}
-		],
-		contact: "Email/Skype: Thuy.dtalent@gmail.com Zalo: 0399449727"
-	},
-	{
-		"title": "[ĐÀ NẴNG/REMOTE] H𝗜𝗙𝗜𝗩𝗘𝗣𝗟𝗨𝗦 𝗧𝗛ÔNG BÁO TUYỂN DỤNG",
-		"time": "",
-		"city": "Đà nẵng",
-		"level": "",
-		"work_way": ["Offline"],
-		"company": "H𝗜𝗙𝗜𝗩𝗘𝗣𝗟𝗨𝗦",
-		"job_name": "Giáo viên dạy Scratch",
-		"number_employees": 1,
-		"salary": "",
-		"description": "",
-		"requirements": "",
-		"type": "facebook",
-		"link": "",
-		"images": [
-			{
-				description: 'there is an even simpler way',
-				src: 'https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED'
-			},
-			{
-				description: 'Try combining the two code snippets',
-				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
-			}
-		],
-		contact: "Email/Skype: Thuy.dtalent@gmail.com Zalo: 0399449727"
-	},
-	{
-		"title": "[ĐÀ NẴNG/REMOTE] H𝗜𝗙𝗜𝗩𝗘𝗣𝗟𝗨𝗦 𝗧𝗛ÔNG BÁO TUYỂN DỤNG",
-		"time": "",
-		"city": "Đà nẵng",
-		"level": "",
-		"work_way": ["Offline"],
-		"company": "H𝗜𝗙𝗜𝗩𝗘𝗣𝗟𝗨𝗦",
-		"job_name": "Giáo viên dạy Python",
-		"number_employees": 1,
-		"salary": "",
-		"description": "",
-		"requirements": "",
-		"type": "facebook",
-		"link": "",
-		"images": [
-			{
-				description: 'there is an even simpler way',
-				src: 'https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED'
-			},
-			{
-				description: 'Try combining the two code snippets',
-				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
 			}
 		],
 		contact: "Email/Skype: Thuy.dtalent@gmail.com Zalo: 0399449727"
@@ -169,18 +92,19 @@ Input:
 				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
 			}
 		]
+	time: 1713339830000
 
 Output:
 [
 	{
 		"title": "Paracel Tech Tuyển dụng",
-		"time": "",
+		"time": 1713339830000,
 		"city": "",
 		"level": "",
-		"work_way": [],
+		"workWay": [],
 		"company": "Paracel Tech",
-		"job_name": "Game Developer",
-		"number_employees": 1,
+		"job": "Game Developer",
+		"numberEmployees": 1,
 		"salary": "",
 		"description": "",
 		"requirements": "Tốt nghiệp CĐ/ĐH chuyên ngành CNTT, Có khả năng giao tiếp bằng ngoại ngữ tốt (Eng/JP), Có định hướng gắn bó và làm việc lâu dài",
@@ -221,122 +145,18 @@ Input:
 				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
 			}
 		]
-
+    time: 1713339890000
 Output:
 [
 	{
 		"title": "FPT SOFTWARE Tuyển dụng",
 		"time": "",
-		"city": "Đà Nẵng",
+		"city": "Đà Nẵng, Quy Nhơn",
 		"level": "Fresher",
-		"work_way": [],
+		"workWay": [],
 		"company": "FPT SOFTWARE",
-		"job_name": "Java/.Net",
-		"number_employees": 1,
-		"salary": "",
-		"description": "",
-		"requirements": "",
-		"type": "facebook",
-		"link": "",
-		"images": [
-			{
-				description: 'there is an even simpler way',
-				src: 'https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED'
-			},
-			{
-				description: 'Try combining the two code snippets',
-				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
-			}
-		],
-		"contact": "Email: ChiNM1@fpt.com"
-	},
-	{
-		"title": "FPT SOFTWARE Tuyển dụng",
-		"time": "",
-		"city": "Quy Nhơn",
-		"level": "Fresher",
-		"work_way": [],
-		"company": "FPT SOFTWARE",
-		"job_name": "Java/.Net",
-		"number_employees": 1,
-		"salary": "",
-		"description": "",
-		"requirements": "",
-		"type": "facebook",
-		"link": "",
-		"images": [
-			{
-				description: 'there is an even simpler way',
-				src: 'https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED'
-			},
-			{
-				description: 'Try combining the two code snippets',
-				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
-			}
-		],
-		"contact": "Email: ChiNM1@fpt.com"
-	},
-	{
-		"title": "FPT SOFTWARE Tuyển dụng",
-		"time": "",
-		"city": "Đà Nẵng",
-		"level": "Fresher",
-		"work_way": [],
-		"company": "FPT SOFTWARE",
-		"job_name": "Embedded/C++",
-		"number_employees": 1,
-		"salary": "",
-		"description": "",
-		"requirements": "",
-		"type": "facebook",
-		"link": "",
-		"images": [
-			{
-				description: 'there is an even simpler way',
-				src: 'https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED'
-			},
-			{
-				description: 'Try combining the two code snippets',
-				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
-			}
-		],
-		"contact": "Email: ChiNM1@fpt.com"
-	},
-	{
-		"title": "FPT SOFTWARE Tuyển dụng",
-		"time": "",
-		"city": "Đà Nẵng",
-		"level": "Fresher",
-		"work_way": [],
-		"company": "FPT SOFTWARE",
-		"job_name": "AI/DE",
-		"number_employees": 1,
-		"salary": "",
-		"description": "",
-		"requirements": "",
-		"type": "facebook",
-		"link": "",
-		"images": [
-			{
-				description: 'there is an even simpler way',
-				src: 'https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED'
-			},
-			{
-				description: 'Try combining the two code snippets',
-				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
-			}
-		],
-		"contact": "Email: ChiNM1@fpt.com"
-	},
-	{
-		"title": "FPT SOFTWARE Tuyển dụng",
-		"time": "",
-		"city": "Đà Nẵng",
-		"level": "Fresher",
-		"work_way": [],
-		"company": "FPT SOFTWARE",
-		"job_name": "Comtor N2 up",
-		"number_employees": 1,
+		"job": "Java/.Net, Embedded/C++, AI/DE, Comtor N2 up",
+		"numberEmployees": 1,
 		"salary": "",
 		"description": "",
 		"requirements": "",
@@ -371,17 +191,18 @@ Input:
 				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
 			}
 		]
+	time:
 Output:
 [
 	{
 		"title": "FPT SOFTWARE Tuyển dụng",
-		"time": "",
+		"time": null,
 		"city": "Đà Nẵng",
 		"level": "Fresher",
-		"work_way": [],
+		"workWay": [],
 		"company": "FPT SOFTWARE",
-		"job_name": ".Net/Java",
-		"number_employees": 1,
+		"job": ".Net/Java",
+		"numberEmployees": 1,
 		"salary": "",
 		"description": "FPT Software Đà Nẵng cần tuyển 20 fresher .Net/Java , có ngoại ngữ là lợi thế",
 		"requirements": "",
@@ -402,4 +223,4 @@ Output:
 ]
 
 
-Phân tích đoạn văn bản sau để lấy ra các thông tin theo format như json Output:
+Phân tích đoạn văn bản sau để lấy ra các thông tin theo format như json Output, nếu đoạn văn bản không có nội dung phù hợp để trích xuất theo định dạng JSON thì trả về null:
