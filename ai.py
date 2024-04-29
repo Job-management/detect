@@ -31,7 +31,7 @@ def detect(post):
         prompt = file.read()
 
     # Combine the prompt and the post to create input for the model
-    input_text = prompt + post
+    input_text = prompt + str(post)
 
     # Generate new content based on the input
     response = model.generate_content(input_text)
