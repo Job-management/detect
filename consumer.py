@@ -20,9 +20,10 @@ def callback(ch, method, properties, body):
         print("=================")
         message_body = body.decode("utf-8")
         dict_message = json.loads(message_body)
+        print(dict_message)
         data = detect(dict_message)
+        print(data)
         if(data == "null"): return
-        print(str(data))
         dict_data = json.loads(data)
 
         # Kiểm tra xem dict_data có phải là một danh sách không

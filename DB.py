@@ -24,5 +24,6 @@ def save_data_into_DB(data):
         cursor.execute(sql, list(map(str, data.values())))
         connection.commit()
         connection.close()
+        print('saved new data')
     except Exception as e:
         logger.error(f"Error occurred while saving data to DB: {e}")
