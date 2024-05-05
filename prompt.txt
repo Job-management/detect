@@ -1,4 +1,4 @@
-JSON TYPE:
+Data output format:
 [
 	{
 		"title": string, (require field)
@@ -14,6 +14,7 @@ JSON TYPE:
 		"requirements": string,
 		"type": string,
 		"link": string,
+		"major_category_id": number,
 		"images": [
 			{
 				"description": string,
@@ -36,15 +37,16 @@ Input:
 	  CONTACT: Email/Skype: Thuy.dtalent@gmail.com Zalo: 0399449727
 	Image: [
 			{
-				description: 'there is an even simpler way',
-				src: 'https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED'
+				description: "there is an even simpler way",
+				src: "https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED"
 			},
 			{
-				description: 'Try combining the two code snippets',
-				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
+				description: "Try combining the two code snippets",
+				src: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
 			}
 		]
 	time: 1713339960000
+	link: "https://www.facebook.com/groups/vieclamCNTTDaNang/posts/2899065333593760/?__cft__[0]=AZXsU5uoqvYSWw52PeazByesz7qlN7GK0F7_OakFma5zyDxGsa9NMfEH8pdN30mCjrjLdB_BuKbBEE9RLyJENNX6Qo9klnlA0TpSYqhlVaXCPAuJwgBbwSkHqG1OFch8oTyxLf6JXT1HWMU3OSWC7wPeHBZQU0UBd66Y0xBmWCArKJE2Cjn8mivHSVWzHahwC-SlEjdpAXofuzGU67WQ_4z0&__tn__=%2CO%2CP-R"
 Output:
 [
 	{
@@ -60,14 +62,15 @@ Output:
 		"description": "",
 		"requirements": "",
 		"type": "facebook",
-		"link": "",
+		"link": "https://www.facebook.com/groups/vieclamCNTTDaNang/posts/2899065333593760/?__cft__[0]=AZXsU5uoqvYSWw52PeazByesz7qlN7GK0F7_OakFma5zyDxGsa9NMfEH8pdN30mCjrjLdB_BuKbBEE9RLyJENNX6Qo9klnlA0TpSYqhlVaXCPAuJwgBbwSkHqG1OFch8oTyxLf6JXT1HWMU3OSWC7wPeHBZQU0UBd66Y0xBmWCArKJE2Cjn8mivHSVWzHahwC-SlEjdpAXofuzGU67WQ_4z0&__tn__=%2CO%2CP-R",
 		"images": [
 			{
 				"description": "",
 				"src": "https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED"
 			}
 		],
-		contact: "Email/Skype: Thuy.dtalent@gmail.com Zalo: 0399449727"
+		"contact": "Email/Skype: Thuy.dtalent@gmail.com Zalo: 0399449727",
+		"major_category_id": 3
 	}
 ]
 
@@ -84,15 +87,16 @@ Input:
 		M/Z: 0932.585.672 (Ms.Nhi)
 	Image: [
 			{
-				description: 'there is an even simpler way',
-				src: 'https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED'
+				description: "there is an even simpler way",
+				src: "https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED"
 			},
 			{
-				description: 'Try combining the two code snippets',
-				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
+				description: "Try combining the two code snippets",
+				src: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
 			}
 		]
 	time: 1713339830000
+	link: "https://www.facebook.com/groups/vieclamCNTTDaNang/posts/2899065333593760/?__cft__[0]=AZXsU5uoqvYSWw52PeazByesz7qlN7GK0F7_OakFma5zyDxGsa9NMfEH8pdN30mCjrjLdB_BuKbBEE9RLyJENNX6Qo9klnlA0TpSYqhlVaXCPAuJwgBbwSkHqG1OFch8oTyxLf6JXT1HWMU3OSWC7wPeHBZQU0UBd66Y0xBmWCArKJE2Cjn8mivHSVWzHahwC-SlEjdpAXofuzGU67WQ_4z0&__tn__=%2CO%2CP-R"
 
 Output:
 [
@@ -109,18 +113,19 @@ Output:
 		"description": "",
 		"requirements": "Tốt nghiệp CĐ/ĐH chuyên ngành CNTT, Có khả năng giao tiếp bằng ngoại ngữ tốt (Eng/JP), Có định hướng gắn bó và làm việc lâu dài",
 		"type": "facebook",
-		"link": "",
+		"link": "https://www.facebook.com/groups/vieclamCNTTDaNang/posts/2899065333593760/?__cft__[0]=AZXsU5uoqvYSWw52PeazByesz7qlN7GK0F7_OakFma5zyDxGsa9NMfEH8pdN30mCjrjLdB_BuKbBEE9RLyJENNX6Qo9klnlA0TpSYqhlVaXCPAuJwgBbwSkHqG1OFch8oTyxLf6JXT1HWMU3OSWC7wPeHBZQU0UBd66Y0xBmWCArKJE2Cjn8mivHSVWzHahwC-SlEjdpAXofuzGU67WQ_4z0&__tn__=%2CO%2CP-R",
 		"images": [
 			{
-				description: 'there is an even simpler way',
-				src: 'https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED'
+				description: "there is an even simpler way",
+				src: "https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED"
 			},
 			{
-				description: 'Try combining the two code snippets',
-				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
+				description: "Try combining the two code snippets",
+				src: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
 			}
 		],
-		"contact": "Email: tuyendung@paracelsoft.com, M/Z: 0932.585.672 (Ms.Nhi)"
+		"contact": "Email: tuyendung@paracelsoft.com, M/Z: 0932.585.672 (Ms.Nhi)",
+		"major_category_id": 3
 	}
 ]
 
@@ -137,15 +142,16 @@ Input:
 		🥰 Ứng viên quan tâm gửi CV mail ChiNM1@fpt.com nhé!
 	Image: [
 			{
-				description: 'there is an even simpler way',
-				src: 'https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED'
+				description: "there is an even simpler way",
+				src: "https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED"
 			},
 			{
-				description: 'Try combining the two code snippets',
-				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
+				description: "Try combining the two code snippets",
+				src: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
 			}
 		]
     time: 1713339890000
+    link: "https://www.facebook.com/groups/vieclamCNTTDaNang/posts/2899065333593760/?__cft__[0]=AZXsU5uoqvYSWw52PeazByesz7qlN7GK0F7_OakFma5zyDxGsa9NMfEH8pdN30mCjrjLdB_BuKbBEE9RLyJENNX6Qo9klnlA0TpSYqhlVaXCPAuJwgBbwSkHqG1OFch8oTyxLf6JXT1HWMU3OSWC7wPeHBZQU0UBd66Y0xBmWCArKJE2Cjn8mivHSVWzHahwC-SlEjdpAXofuzGU67WQ_4z0&__tn__=%2CO%2CP-R"
 Output:
 [
 	{
@@ -161,18 +167,19 @@ Output:
 		"description": "",
 		"requirements": "",
 		"type": "facebook",
-		"link": "",
+		link: "https://www.facebook.com/groups/vieclamCNTTDaNang/posts/2899065333593760/?__cft__[0]=AZXsU5uoqvYSWw52PeazByesz7qlN7GK0F7_OakFma5zyDxGsa9NMfEH8pdN30mCjrjLdB_BuKbBEE9RLyJENNX6Qo9klnlA0TpSYqhlVaXCPAuJwgBbwSkHqG1OFch8oTyxLf6JXT1HWMU3OSWC7wPeHBZQU0UBd66Y0xBmWCArKJE2Cjn8mivHSVWzHahwC-SlEjdpAXofuzGU67WQ_4z0&__tn__=%2CO%2CP-R",
 		"images": [
 			{
-				description: 'there is an even simpler way',
-				src: 'https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED'
+				description: "there is an even simpler way",
+				src: "https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED"
 			},
 			{
-				description: 'Try combining the two code snippets',
-				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
+				description: "Try combining the two code snippets",
+				src: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
 			}
 		],
-		"contact": "Email: ChiNM1@fpt.com"
+		"contact": "Email: ChiNM1@fpt.com",
+		"major_category_id": 3
 	}
 ]
 
@@ -191,7 +198,8 @@ Input:
 				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
 			}
 		]
-	time:
+	time: ""
+	link: "https://www.facebook.com/groups/vieclamCNTTDaNang/posts/2899065333593760/?__cft__[0]=AZXsU5uoqvYSWw52PeazByesz7qlN7GK0F7_OakFma5zyDxGsa9NMfEH8pdN30mCjrjLdB_BuKbBEE9RLyJENNX6Qo9klnlA0TpSYqhlVaXCPAuJwgBbwSkHqG1OFch8oTyxLf6JXT1HWMU3OSWC7wPeHBZQU0UBd66Y0xBmWCArKJE2Cjn8mivHSVWzHahwC-SlEjdpAXofuzGU67WQ_4z0&__tn__=%2CO%2CP-R"
 Output:
 [
 	{
@@ -207,20 +215,73 @@ Output:
 		"description": "FPT Software Đà Nẵng cần tuyển 20 fresher .Net/Java , có ngoại ngữ là lợi thế",
 		"requirements": "",
 		"type": "facebook",
-		"link": "",
+		"link": "https://www.facebook.com/groups/vieclamCNTTDaNang/posts/2899065333593760/?__cft__[0]=AZXsU5uoqvYSWw52PeazByesz7qlN7GK0F7_OakFma5zyDxGsa9NMfEH8pdN30mCjrjLdB_BuKbBEE9RLyJENNX6Qo9klnlA0TpSYqhlVaXCPAuJwgBbwSkHqG1OFch8oTyxLf6JXT1HWMU3OSWC7wPeHBZQU0UBd66Y0xBmWCArKJE2Cjn8mivHSVWzHahwC-SlEjdpAXofuzGU67WQ_4z0&__tn__=%2CO%2CP-R",
 		"images": [
 			{
-				description: 'there is an even simpler way',
-				src: 'https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED'
+				description: "there is an even simpler way",
+				src: "https://scontent.fsgn2-8.fna.fbcdn.net/v/t39.30808-6/433807229_1105273444018976_1867351471613148135_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHfIKacKpjB8YTX28JRo_40kFhw93tSh5KQWHD3e1KHkq2bapvr4SJG4y-4gInJqU0Xd7fachiG-VRtMXR1G_nq&_nc_ohc=9F4Dea1Sx9MAX9QXUR-&_nc_ht=scontent.fsgn2-8.fna&oh=00_AfCJB7Qu6EifH-6zPnXvMATKGytST47ukIQvtbtr3x9YYg&oe=65FDA5ED"
 			},
 			{
-				description: 'Try combining the two code snippets',
-				src: 'https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg'
+				description: "Try combining the two code snippets",
+				src: "https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
 			}
 		],
-		"contact": "Email: Tramltt2@fpt.com"
+		"contact": "Email: Tramltt2@fpt.com",
+		"major_category_id": 3
 	}
 ]
 
+major_category table:
+id	title
+1	y học
+2	Quản trị
+3	Công nghệ thông tin
+4	Sư phạm
+5	Ngôn ngữ Anh
+6	Ngôn ngữ Nga
+7	Ngôn ngữ Pháp
+8	Ngôn ngữ Trung Quốc
+9	Ngôn ngữ Nhật
+10	Ngôn ngữ Hàn Quốc
+11	Ngôn ngữ Thái Lan
+12	Khoa học xã hội
+13	Tài chính
+14	Luật
+15	Công nghệ sinh học
+16	Xây dựng
+17	Du lịch
+18	Khoa học y sinh
+19	Công nghệ nano
+20	Maketing
+21	Kế toán
+22	Khoa học dữ liệu
+23	Kinh tế
+24	Chương trình chính quy quốc tế
+25	Hóa học
+26	Báo chí
+27	Xã hội
+28	Quản lý tài nguyên và môi trường
+29	Tâm lý học
+30	Cơ khí
+31	Cơ điện tử
+32	Kỹ thuật ô tô
+33	Kỹ thuật nhiệt
+34	Điện tử viễn thông
+35	Tự động hóa
+36	Môi trường
+37	Kỹ thuật thực phẩm
+38	Kiến trúc
+39	Chế tạo máy
+40	Dầu khí
+41	Kỹ thuật tàu thủy
+42	Kỹ thuật điện
+43	Công nghệ thực phẩm
+44	Hệ thống công nghiệp
+45	Hệ thống nhúng
+46	Chương trình cử nhân chính quy quốc tế
+47	Y sinh
+48	Vật lý
 
-Phân tích đoạn văn bản sau để lấy ra các thông tin theo format như json Output, nếu đoạn văn bản không có nội dung phù hợp để trích xuất theo định dạng JSON thì trả về null:
+Phân tích đoạn văn bản sau để lấy ra các thông tin theo format như Data output format đã quy định và dựa vào bảng major_category để điền giá trị cho field major_category là id của ngành học liên quan nhất với vị trí việc làm sau khi tốt nghiệp,
+nếu đoạn văn bản không có nội dung phù hợp để trích xuất theo định dạng JSON thì trả về null.
+Data input:
