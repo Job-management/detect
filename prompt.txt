@@ -281,6 +281,7 @@ id	title
 46	Chương trình cử nhân chính quy quốc tế
 47	Y sinh
 48	Vật lý
+49  Unknown
 
 Phân tích đoạn văn bản sau để lấy ra các thông tin theo format như Data output format đã quy định và dựa vào bảng major_category để điền giá trị cho field major_category là id của ngành học liên quan nhất với vị trí việc làm sau khi tốt nghiệp,
 nếu đoạn văn bản không có nội dung phù hợp để trích xuất theo định dạng JSON thì trả về null.
