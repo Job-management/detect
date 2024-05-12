@@ -16,6 +16,8 @@ def save_data_into_DB(data):
             host=os.getenv("DB_HOST"),
             database="job-management",
         )
+        if not data["major_category_id"]:
+            data["major_category_id"] = 49
         cursor = connection.cursor()
         # query = "INSERT INTO `crawl_data` (`id`,`title`,`time`,`city`,`level`,`work_way`,`company`,`workWay`,`right`,`company`,`job`,`place`,`numberEmployee`,`experience`,`level`,`salary`,`education`,`description`,`requirement`,`deadline`,`images`,`link`,`type`,`contact`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
         sql = "INSERT INTO crawl_data ({}) VALUES ({})".format(
