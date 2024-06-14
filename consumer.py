@@ -7,7 +7,7 @@ print("===== START CONSUMER =====")
 connection = pika.BlockingConnection(pika.ConnectionParameters(host="localhost", port=5672))
 channel = connection.channel()
 
-channel.queue_declare(queue="raw-data", durable=True)
+channel.queue_declare(queue="raw-data")
 
 
 def verifyData(json_data):
