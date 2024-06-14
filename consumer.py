@@ -2,7 +2,7 @@ import pika
 from ai import detect
 from DB import save_data_into_DB
 import json
-import ast
+
 print("===== START CONSUMER =====")
 connection = pika.BlockingConnection(pika.ConnectionParameters(host="localhost", port=5672))
 channel = connection.channel()
