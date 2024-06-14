@@ -33,7 +33,7 @@ def save_data_into_DB(data):
 def is_duplicate_data(link):
     try:
         connection = mysql.connector.connect(
-            user="root", password="root@", host="localhost", database="job-management"
+            user=os.getenv('DB_USER'), password=os.getenv('DB_PASSWORD'), host=os.getenv('DB_HOST'), database="job-management"
         )
         cursor = connection.cursor()
         query = "SELECT * FROM `crawl_data` WHERE `link` = %s"
