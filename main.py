@@ -92,7 +92,7 @@ def pushData(req: Request):
         )
         channel = connection.channel()
 
-        channel.queue_declare(queue="raw-data")
+        channel.queue_declare(queue="raw-data", durable=True)
         channel.basic_publish(
             exchange="",
             routing_key="raw-data",
@@ -106,7 +106,7 @@ def pushData(req: Request):
 def consume_queue():
     connection = pika.BlockingConnection(pika.ConnectionParameters(host="localhost"))
     channel = connection.channel()
-    channel.queue_declare(queue="raw-data")
+    channel.queue_declare(queue="raw-data", durable=True)
 
     def callback(ch, method, properties, body):
         print(f" [x] Received {body}")
@@ -124,7 +124,7 @@ def consume_queue():
 def event_listener(request: RequestBodyEvent):
     connection = pika.BlockingConnection(pika.ConnectionParameters(host="rabbitmq"))
     channel = connection.channel()
-    channel.queue_declare(queue="raw-data")
+    channel.queue_declare(queue="raw-data", durable=True)
     try:
         if not request.event:
             raise HTTPException(status_code=400, detail="Event field is required")
